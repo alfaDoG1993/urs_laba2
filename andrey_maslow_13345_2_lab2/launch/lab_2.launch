@@ -1,0 +1,5 @@
+<launch>
+	<master auto="start"/>
+    <node name="determinant_server" pkg="andrey_maslow_13345_2_lab2" type="determinant_server.py"></node>
+	<node name="determinant_client" pkg="andrey_maslow_13345_2_lab2" type="determinant_client.py"></node>
+</launch>
