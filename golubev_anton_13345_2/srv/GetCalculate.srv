@@ -1,0 +1,6 @@
+float64 a
+float64 b
+string  operation
+---
+float64 result
+bool    error_status
