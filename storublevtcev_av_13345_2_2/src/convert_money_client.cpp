@@ -12,12 +12,12 @@ int main(int argc, char **argv)
     storublevtcev_av_13345_2_2::ConvertMoney srv;
 
     ROS_INFO("Convert money client begin");
-    float rate=0.3;
+    float rate=1;
     ros::Rate loop(rate);
-    float money=0.1;
+    float money=00;
     while(ros::ok())
         {
-            money+=0.1;
+            money+=1;
             if(money>10000) money=0.1;
             srv.request.rub=money;
             if(client.call(srv))

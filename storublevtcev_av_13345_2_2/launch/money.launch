@@ -1,5 +1,5 @@
 <launch>
   <node  pkg="storublevtcev_av_13345_2_2" type="convert_money_server" name="convert_money_server" />
-  <node  pkg="storublevtcev_av_13345_2_2" type="convert_money_client" name="convert_money_client" />
+  <node  pkg="storublevtcev_av_13345_2_2" type="convert_money_client" name="convert_money_client" output="screen" />
   <rosparam file="$(find storublevtcev_av_13345_2_2)/config/load_money.yaml" command="load"/>
 </launch>
