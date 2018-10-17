@@ -13,18 +13,13 @@ int main(int argc, char *argv[])
   n.param<float>("triangle_parameter_publisher_rate",rate,1);
   ros::Rate loop(rate);
   while (ros::ok()){
-    float a=5;//просто чтобы зайти в цикл.
-    float b=1;
-    float c=1;
-    while(a>(b+c)||b>(a+c)||c>(a+b))
-    {
-      a = rand();
-      a /= RAND_MAX;
-      b = rand();
-      b /= RAND_MAX;
-      c = rand();
-      c /= RAND_MAX;
-    }
+    float a,b,c;
+    a = rand();
+    a /= RAND_MAX;
+    b = rand();
+    b /= RAND_MAX;
+    c = rand();
+    c /= RAND_MAX;
     srv.request.first = a;
     srv.request.second = b;
     srv.request.third = c;
