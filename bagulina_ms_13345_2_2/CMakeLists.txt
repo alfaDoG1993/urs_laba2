@@ -203,3 +203,6 @@ target_link_libraries(get_week_day_server ${catkin_LIBRARIES})
 add_executable(get_week_day_client src/get_week_day_client.cpp)
 target_link_libraries(get_week_day_client ${catkin_LIBRARIES})
 #add_dependencies(add_two_ints_client beginner_tutorials_gencpp)
+
+add_executable(get_week_day_auto_client src/get_week_day_auto_client.cpp)
+target_link_libraries(get_week_day_auto_client ${catkin_LIBRARIES})
