@@ -17,6 +17,7 @@ int main(int argc, char **argv)
     std::cin >> a1;
     std::cin >> a2;
     std::cin >> a3;
+
     srv.request.a1 = a1;
     srv.request.a2 = a2;
     srv.request.a3 = a3;
