@@ -2,8 +2,7 @@
 #define CITATIONS_LIST_H
 
 #include <map>            // Контейнер для создания словаря
-#ifndef RUSSIAN
-//#define RUSSIAN
+
 std::map <std::string, std::string> name_list = {
   {"Vasya Petrov 03923235452", "Vasya Petrov"},
   {"Ivan Zarechni 13923235452", "Ivan Zarechni"},
@@ -17,5 +16,18 @@ std::map <std::string, std::string> name_list = {
   {"Ledi Gaga 9912432354", "Ledi_Gaga"},
   {"Bredli Cooper 1034234234", "Bredli Cooper"},
 };
-#endif
+
+std::map <std::string, std::string> call_name_list = {
+  {"Vasya", "Petrov"},
+  {"Ivan", "Zarechni"},
+  {"Dan", "Kozlovski"},
+  {"Vasya", "Knopkin"},
+  {"Nastya", "Zvonova"},
+  {"Kate", "Stypova"},
+  {"Serg", "Kolashov"},
+  {"Konstantin", "Habenski"},
+  {"Ledi", "Gaga"},
+  {"Bredli", "Cooper"},
+};
+
 #endif // CITATIONS_LIST_H
